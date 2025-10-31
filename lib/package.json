@@ -1,0 +1,26 @@
+{
+  "name": "@spotify-history/lib",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    "./*": "./src/*/index.ts"
+  },
+  "scripts": {
+    "build": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.15.15",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "drizzle-kit": "^0.31.6"
+  },
+  "devDependencies": {
+    "next-auth": "5.0.0-beta.30",
+    "typescript": "^5.9.3"
+  }
+}

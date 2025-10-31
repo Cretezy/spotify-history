@@ -1,0 +1,39 @@
+# Dependencies
+node_modules
+
+# Build outputs
+.next
+out
+dist
+build
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+drizzle
+
+# Cache
+.cache
+
+# Logs
+*.log
+
+# Environment files
+.env*
+
+# IDE
+.vscode
+.idea
+
+# Package manager
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Generated files
+*.tsbuildinfo
+next-env.d.ts
+
+# Components (if using shadcn)
+components/ui

@@ -1,0 +1,22 @@
+{
+  "name": "spotify-history",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "start": "pnpm -r start",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "eslint": "^9.38.0",
+    "prettier": "^3.6.2"
+  },
+  "packageManager": "pnpm@10.20.0"
+}
